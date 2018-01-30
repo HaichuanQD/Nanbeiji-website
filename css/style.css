@@ -1,0 +1,157 @@
+/*
+color:
+#1b6897 dark
+#2d98da main
+#67b4e4 light
+#92caec lighter
+ 
+*/
+body {
+  padding-top: 80px;
+  font-size: 18px;
+}/*加固定浮动在上方的导航后的规矩*/
+/*-----nav------*/
+
+
+.navbar{
+    height: 80px ;
+    font-size:85%;
+}
+
+.navbar-brand{
+    height: 80px ;
+    padding: 5px 5px ;
+}
+
+.navbar-brand img{height: 70px;}
+
+
+
+
+.navbar-toggle{
+    margin-top: 13px;
+}
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    background-color: #f8f8f8;
+}
+
+.navbar-default .navbar-nav > li > a {
+      transition: background-color 0.5s;
+      background-color: #f8f8f8;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #92caec;
+  
+}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #67b4e4;
+}
+
+/*-----slider-----*/
+.slider-container{
+    height: 500px;
+    width: 100%;
+    background-color: #000;
+}
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.p3 {
+  background: #2574A9;
+
+
+}
+.lunbo1{
+    background-image: url(../img/p1.png);
+    background-size: 536px 500px;
+}
+
+.p2,.p4{background: #DADFE1;}
+
+/*--轮播p1---*/
+.main1_ani_01 {
+    position: absolute;
+    top:10%;
+    left:50%;
+    width: 300px;
+    height: auto;
+    margin-left:-150px; 
+}
+.main1_ani_02 {
+    position: absolute;
+    top:46%;
+    left:50%;
+    width: 747px;
+    height: auto;
+    margin-left:-373px; 
+}
+.main1_ani_03 {
+    position: absolute;
+    top:86%;
+    left:50%;
+    width: 953px;
+    height: auto;
+    margin-left:-477px; 
+}
+
+.main1_ani_04{
+    font-size: 150%;
+    font-weight: 300;
+}
+
+
+/*----QUERIES----*/
+@media(min-width:768px){
+    .navbar-nav li a {
+    line-height: 50px ;
+}
+}
+    
+@media(max-width:767px){
+    body{
+     padding-top: 60px;   
+    }
+    
+    .navbar{
+    height: 60px ;
+}
+    .navbar-brand{
+    height: 60px ;
+    padding: 5px 5px ;
+}
+    .navbar-brand img{height: 50px;
+    margin-left: 20px;}
+
+.slider-container{
+    height:260px;
+}
+}
+
