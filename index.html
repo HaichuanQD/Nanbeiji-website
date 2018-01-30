@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="青岛南北极三维效果图工作室">
+    <meta name="author" content="Xhc">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>青岛南北极三维效果图工作室——您身边的制图专家</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default  navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="nanbeiji logo"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">主&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#portfilo">作品案例</a></li>
+            <li><a href="#news">新闻动态</a></li>
+            <li><a href="#contact">联系我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+   
+   <section class="slider" >
+    <div class="slider-container" id="btn1">
+       <div class="swiper-container swiper-container-main1"><!--真正意义上的轮播图插件分区开始了-->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide lunbo1" >
+             
+              <div class="container">
+                  <img class="main1_ani_01"  src="img/logowhite.png">
+                  <img class="main1_ani_02"  src="img/p1_middletext.png">
+                  <img class="main1_ani_03"  src="img/p1_longtext.png">
+                  <div style="width: 266px;position: absolute;top:65%;left:50%;margin-left: -133px;">
+                  <button class="main1_ani_04 btn btn-danger btn-lg btn-block" >我要咨询</button>
+                </div>
+              </div>
+ 
+             
+             
+             
+              </div>
+              <div class="swiper-slide p2">Slide 2</div>
+              <div class="swiper-slide p3">Slide 3</div>
+              <div class="swiper-slide p4">Slide 4</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+  </div>
+    
+    
+    </div><!-- /.container -->
+   </section>
+    
+    
+    <section>
+        <div style="height: 800px;">
+            
+        </div>
+        
+        
+    </section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate.min.js"></script>
+    <script src="js/swiper.animate.param.js"></script>
+    <script language="javascript">
+    
+        var myAC_main1 = new animateControl("main1_ani_");
+        // 在文档结构加载完成之后，载入swiper幻灯片，并初始化所有的动画控制器
+        
+    $(document).ready(function(){
+    var mySwiper = new Swiper('.swiper-container-main1', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,        
+        autoplay:7000,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop:true,
+        autoplayDisableOnInteraction: false,
+        speed:500,
+/*
+        effect : 'fade',
+       fade: {
+       crossFade: true,
+        }
+*/
+        onInit: function(swiper){
+					myAC_main1.init(swiperAnimateParam_main1, swiper);
+					myAC_main1.play(); // 如果页面中未使用Loading效果，则必须取消本行代码的注释，以开启myAC_main1主动画控制器中动画的播放
+				},
+				onSlideChangeEnd: function(swiper){
+					myAC_main1.play();
+				},
+    });
+        
+        //鼠标覆盖停止自动切换
+        mySwiper.container[0].onmouseover=function(){
+          mySwiper.stopAutoplay();
+        }
+        //鼠标移出开始自动切换
+        mySwiper.container[0].onmouseout=function(){
+          mySwiper.startAutoplay();
+        }
+        //http://3.swiper.com.cn/api/function/2014/1218/111.html来自这里的信息，感谢。
+        
+        
+        });
+        
+        
+
+  </script>
+  </body>
+</html>
