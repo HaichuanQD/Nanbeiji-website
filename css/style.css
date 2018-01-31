@@ -84,16 +84,15 @@ body {
       -webkit-align-items: center;
       align-items: center;
     }
-.p3 {
-  background: #2574A9;
 
-
-}
+/*---轮播背景色---*/
 .lunbo1{
     background-image: url(../img/p1.png);
     background-size: 536px 500px;
 }
 .lunbo2{background: #DADFE1;}
+
+.lunbo3{background: #2574A9;}
 
 .p4{background: #DADFE1;}
 
@@ -132,6 +131,11 @@ body {
 .makemiddle {
     position: relative;
     height: 500px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width:1170px;
 }
 
 .main1_ani_05 {
@@ -154,6 +158,38 @@ body {
     right:2%;
     width: 371px;
     height: auto;
+}
+
+/*----轮播p3----*/
+.main1_ani_08{
+    position: absolute;
+    width: 431px;
+    height: auto;
+    top:27%;
+    left:20%;
+    margin-left: -215px;
+}
+.main1_ani_09{
+    position: absolute;
+    width: 814px;
+    height: auto;
+    top:25%;
+    left:71%;
+    margin-left: -407px;
+}
+.main1_ani_10{
+    width: 320px;
+    height:278px;
+    
+}
+
+.main1_ani_10_1{
+    position: absolute!important;
+    width: 320px!important;
+    height: 278px!important;
+    top:16% !important;
+    left:86% !important;
+    margin-left: -160px!important;
 }
 
 
