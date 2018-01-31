@@ -93,8 +93,9 @@ body {
     background-image: url(../img/p1.png);
     background-size: 536px 500px;
 }
+.lunbo2{background: #DADFE1;}
 
-.p2,.p4{background: #DADFE1;}
+.p4{background: #DADFE1;}
 
 /*--轮播p1---*/
 .main1_ani_01 {
@@ -126,6 +127,37 @@ body {
     font-size: 150%;
     font-weight: 300;
 }
+
+/*--轮播p2---*/
+.makemiddle {
+    position: relative;
+    height: 500px;
+}
+
+.main1_ani_05 {
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 798px;
+    height: auto;
+}
+.main1_ani_06 {
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 744px;
+    height: auto;
+}
+.main1_ani_07 {
+    position: absolute;
+    top:0%;
+    right:2%;
+    width: 371px;
+    height: auto;
+}
+
+
+
 
 
 /*----QUERIES----*/
