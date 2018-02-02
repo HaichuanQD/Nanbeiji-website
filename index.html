@@ -97,7 +97,16 @@
                 
                 
               </div>
-              <div class="swiper-slide p4">Slide 4</div>
+              <div class="swiper-slide lunbo4">
+                  <div class="makemiddle">
+                    
+                     <img class="main1_ani_11" src="img/p4_title.png" alt="选择我们">
+                     <img class="main1_ani_12" src="img/p4_building.png" alt="效果图">
+                     <a class="main1_ani_15" href="#"><img  src="img/p4_btn.png" alt="作品案例"></a>
+                     <img class="main1_ani_16" src="img/p4_tip.png" alt="效果图">
+                       
+                   </div>   
+              </div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -161,10 +170,20 @@
         //鼠标覆盖停止自动切换
         mySwiper.container[0].onmouseover=function(){
           mySwiper.stopAutoplay();
+          $('.swiper-button-prev').removeClass('animated fadeOutRight');
+          $('.swiper-button-prev').addClass('animated fadeInRight');
+          $('.swiper-button-next').removeClass('animated fadeOutLeft');
+          $('.swiper-button-next').addClass('animated fadeInLeft');
+          
         }
         //鼠标移出开始自动切换
         mySwiper.container[0].onmouseout=function(){
           mySwiper.startAutoplay();
+          $('.swiper-button-prev').removeClass('animated fadeInRight');
+          $('.swiper-button-prev').addClass('animated fadeOutRight');
+          $('.swiper-button-next').removeClass('animated fadeInLeft');
+          $('.swiper-button-next').addClass('animated fadeOutLeft');
+
         }
         //http://3.swiper.com.cn/api/function/2014/1218/111.html来自这里的信息，感谢。
         

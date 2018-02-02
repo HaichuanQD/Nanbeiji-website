@@ -26,7 +26,10 @@ var swiperAnimateParam_main1 = {
 	
 	// 第 4 张幻灯片
 	slide_4:{
-		// 在此为幻灯片中的动画元素进行动画设置
+		animate_01:{element:'main1_ani_11', animation:'fadeIn',delay:'0.1s',},
+		animate_02:{element:'main1_ani_12', animation:'fadeIn',delay:'0.1s',},
+		animate_03:{element:'main1_ani_15', animation:'fadeIn',delay:'0.1s',},
+		animate_04:{element:'main1_ani_16', animation:'fadeIn',delay:'0.1s',},
 	},
 	
 	// 第 5 张幻灯片

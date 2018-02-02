@@ -85,16 +85,25 @@ body {
       align-items: center;
     }
 
+.swiper-pagination-bullet-active{
+    background: #fff !important;
+    opacity: 0.4 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    opacity: 0;
+}
+
 /*---轮播背景色---*/
 .lunbo1{
     background-image: url(../img/p1.png);
     background-size: 536px 500px;
 }
-.lunbo2{background: #DADFE1;}
+.lunbo2,.lunbo4{background: #e6e9ea;}
 
 .lunbo3{background: #2574A9;}
 
-.p4{background: #DADFE1;}
 
 /*--轮播p1---*/
 .main1_ani_01 {
@@ -191,6 +200,52 @@ body {
     left:86% !important;
     margin-left: -160px!important;
 }
+
+/*----轮播p4----*/
+.main1_ani_11{
+    position: absolute;
+    width: 446px;
+    height: auto;
+    top:14%;
+    left:43%;
+    margin-left: -223px;
+}
+.main1_ani_12{
+    position: absolute;
+    width: 1088px;
+    height: auto;
+    top:45%;
+    left:50%;
+    margin-left: -544px;
+}
+.main1_ani_15{
+    position: absolute;
+    width: 137px;
+    height: auto;
+    top:27%;
+    left:70%;
+    margin-left: -69px;
+}
+.main1_ani_16{
+    position: absolute;
+    width: 314px;
+    height: auto;
+    top:50%;
+    left:76%;
+    margin-left: -157px;
+    
+}
+
+
+.main1_ani_15:link,
+.main1_ani_15:visited {
+    transition:background 0.2s;
+ }
+
+
+.main1_ani_15:hover,
+.main1_ani_15:active {
+background:#c2c7c9; }
 
 
 
