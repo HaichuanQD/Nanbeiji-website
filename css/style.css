@@ -378,7 +378,7 @@ h1{
 }
 .feature_1 p, .text-right p {
     font-size:80%;
-    color:rgb(165, 165, 165);
+    color:rgb(107, 107, 107);
     line-height: 170%;
 }
 
@@ -394,19 +394,113 @@ h1{
     line-height: 64px;
     font-size: 35px;
     float: left;
+    z-index: 99;
 }
 .icon_container_round i{
     margin-left: 2px;
 
 }
+.vertical_line{
+    width:1px;
+    position: absolute;
+    border-left: 1px dashed #969696;
+    height: 77%;
+    left:87px;
+    top:64px;
+}
 .text_container{
     overflow: hidden;
 }
 
+/*----slogan标语----*/
+.background_container {
+    background-image: url(../img/1.jpg);
+    background-size:2706px 300px;
+    background-position:top right;
+    width:100%;
+    height:300px;
+    position: relative;
+}
 
+.full_width_container{
+    width:100%;
+    height: 300px;
+    position: relative;
+}
 
+.blue_gre{
+    position: absolute;
+    right: 25%;
+}
+.slogantext_container{
+    position: absolute;
+    top:25%;
+    height:44px;
+    width:auto;
+}
+.slogantext_container img{
+    height:44px;
+    width:auto;
+}
 
+/*----cases案例----*/
+#cases {
+    background: #f4f4f4;
+}
 
+.cases_container{
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.cases_box_text{
+    padding: 5px;
+}
+
+.cases_container h3{
+    font-size:100%;
+    margin-top:10px;
+}
+.cases_container p{
+    font-size: 50%;
+}
+
+.cases_images{
+    width: 100%;
+}
+#cases .line_container_h {
+    margin:40px 0 40px ;
+}
+#cases .line_solid {
+    width:10%;
+    margin-left: 45%;
+}
+
+.sub_casepic {
+    
+}
+.sub_casepic ul{
+    list-style: none;
+    margin:0;
+
+}
+.sub_casepic li{
+    float: left;
+    display: block;
+    width:33.33%;
+    
+}
+.sub_casepic img{
+    width: 100%;
+}
+
+.cases_container button{
+    margin-top:20px;
+    margin-bottom: 20px; 
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
 
 /*----QUERIES----*/
 @media(min-width:768px){
@@ -433,5 +527,3 @@ h1{
 .slider-container{
     height:260px;
 }
-}
-
