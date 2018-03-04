@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,14 +16,15 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/ionicons.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,10 +65,10 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide lunbo1" >
               
-                <div class="makemiddle">
-                    <img class="main1_ani_01"  src="img/logowhite.png">
-                    <img class="main1_ani_02"  src="img/p1_middletext.png">
-                    <img class="main1_ani_03"  src="img/p1_longtext.png">
+                <div class="container makemiddle">
+                    <img class="main1_ani_01"  data-animation-in="fadeInDown" data-delay-in="0.1" data-duration-in="0.7" src="img/logowhite.png">
+                    <img class="main1_ani_02"  data-animation-in="fadeIn" data-delay-in="0.4" data-duration-in="0.9" src="img/p1_middletext.png">
+                    <img class="main1_ani_03"  data-animation-in="fadeInUp" data-delay-in="0.4" data-duration-in="0.9" src="img/p1_longtext.png">
                     <div style="width: 266px;position: absolute;top:65%;left:50%;margin-left: -133px;">
                     <button class="main1_ani_04 btn btn-danger btn-lg btn-block" >我要咨询</button>
                   </div>
@@ -77,21 +80,21 @@
                 </div>
                 <div class="swiper-slide lunbo2">
                   
-                    <div class="makemiddle">
-                      <img class="main1_ani_05" src="img/p2_left01.png" alt="效果图">
-                      <img class="main1_ani_06" src="img/p2_left02.png" alt="效果图">
-                      <img class="main1_ani_07" src="img/p2_right.png" alt="效果图">
+                    <div class="container makemiddle">
+                      <img class="main1_ani_05" data-animation-in="fadeIn" data-delay-in="0.1" data-duration-in="0.5" src="img/p2_left01.png" alt="效果图">
+                      <img class="main1_ani_06" data-animation-in="fadeIn" data-delay-in="1.5" data-duration-in="2" src="img/p2_left02.png" alt="效果图">
+                      <img class="main1_ani_07" data-animation-in="fadeIn" data-delay-in="0.1" data-duration-in="0.5" src="img/p2_right.png" alt="效果图">
                       <div style="width: 240px;position: absolute;top:67%;left:82%;margin-left: -120px;">
-                    <button class="main1_ani_04 btn btn-info btn-lg btn-block" ><img src="img/p2_aboutus.png" alt="关于我们"></button>
+                    <button class="btn btn-info btn-lg btn-block" ><img class="about_us_button_text" src="img/p2_aboutus.png" alt="关于我们"></button>
                   </div>               
                     </div>
                 </div>
                 <div class="swiper-slide lunbo3">
-                    <div class="makemiddle">
+                    <div class="container makemiddle">
                       
-                      <img class="main1_ani_08" src="img/p3_text.png" alt="选择我们">
-                      <img class="main1_ani_09" src="img/p3_middle.png" alt="效果图">
-                      <img class="main1_ani_10" src="img/p3_jump.png" alt="效果图">
+                      <img class="main1_ani_08" data-animation-in="bounceIn" data-delay-in="0.1"  src="img/p3_text.png" alt="选择我们">
+                      <img class="main1_ani_09" data-animation-in="fadeIn" data-delay-in="0.1" src="img/p3_middle.png" alt="效果图">
+                      <img class="main1_ani_10" data-animation-in="bounceInLeft" data-delay-in="0.9" data-duration-in="1.5" src="img/p3_jump.png" alt="效果图">
                         
                     </div>  
                   
@@ -99,25 +102,21 @@
                   
                 </div>
                 <div class="swiper-slide lunbo4">
-                  <div class="iefix">  
-                  <div class="makemiddle">
+                  <div class="container makemiddle">
                       
-                      <img class="main1_ani_11" src="img/p4_title.png" alt="选择我们">
-                      <img class="main1_ani_12" src="img/p4_building.png" alt="效果图">
-                      <a class="main1_ani_15" href="#"><img  src="img/p4_btn.png" alt="作品案例"></a>
-                      <img class="main1_ani_16" src="img/p4_tip.png" alt="效果图">
+                      <img class="main1_ani_11" data-animation-in="fadeIn" data-delay-in="0.1" src="img/p4_title.png" alt="选择我们">
+                      <img class="main1_ani_12" data-animation-in="fadeIn" data-delay-in="0.1" src="img/p4_building.png" alt="效果图">
+                      <a class="main1_ani_15"  href="#"><img  src="img/p4_btn.png" alt="作品案例"></a>
+                      <img class="main1_ani_16" data-animation-in="fadeIn" data-delay-in="0.1" src="img/p4_tip.png" alt="效果图">
                         
                     </div>
-                  </div>   
                 </div>
+                
               </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
-              <!-- Add Arrows -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <img class="customprev" src="img/prev.png">
+              <img class="customnext" src="img/next.png">
         </div>
-          </div><!-- /.container -->
+          </div>
       <div class="afterswiper">
           <div class="container">
               <div class="row">
@@ -253,7 +252,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="cases_container">      
               <img class="cases_images" src="img/interior1.jpg" alt="...">
               <div class="cases_box_text">
@@ -270,9 +269,9 @@
               <button class="btn btn-default ">更多室内案例</button>  
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="cases_container">      
-              <img class="cases_images" src="img/exterior1.jpg" alt="...">
+              <img class="cases_images" src="img/eng1.jpg" alt="...">
               <div class="cases_box_text">
                   <h3 class="text-center">室外效果图</h3>
                   <p class="text-center">精准造型 优雅环境<br>营造高端氛围 体现建筑美学</p>
@@ -281,18 +280,18 @@
                 <ul>
                   <li><img class="cases_images" src="img/exterior_sm1.jpg" alt="..."></li>
                   <li><img class="cases_images" src="img/exterior_sm2.jpg" alt="..."></li>
-                  <li><img class="cases_images" src="img/interior_sm3.jpg" alt="..."></li>
+                  <li><img class="cases_images" src="img/exterior_sm3.jpg" alt="..."></li>
                 </ul>
               </div>
               <button class="btn btn-default ">更多室外案例</button>  
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
               <div class="cases_container">      
               <img class="cases_images" src="img/product1.jpg" alt="...">
               <div class="cases_box_text">
-                  <h3 class="text-center">产品效果图</h3>
-                  <p class="text-center">庭院建材 工业产品<br>注重产品细节 着眼用户体验</p>
+                  <h3 class="text-center">工业效果图</h3>
+                  <p class="text-center">准确建模 高效专业<br>工业机械专家督导 处处细节精心表现</p>
                 </div>
               <div class="sub_casepic">
                 <ul>
@@ -304,7 +303,52 @@
               <button class="btn btn-default ">更多产品案例</button>  
               </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            
+          </div>
+        </div>
+        <div class="ion-android-alert" style="color:rgb(187, 187, 187);font-size:90px;width:90px;margin:40px auto 0px auto;display:block;"></div>
+        <h3 class="text-center" style="font-size:125%;color:rgb(141, 141, 141);">
+          案例发布经过许可 未经授权不得引用</h3>
+        <div class="line_container_h">
+          <div class="line_solid"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="cases_container">      
+              <img class="cases_images" src="img/product1.jpg" alt="...">
+              <div class="cases_box_text">
+                  <h3 class="text-center">产品效果图</h3>
+                  <p class="text-center">庭院建材 产品表现<br>注重产品细节 着眼用户体验</p>
+                </div>
+              <div class="sub_casepic">
+                <ul>
+                  <li><img class="cases_images" src="img/product_sm1.jpg" alt="..."></li>
+                  <li><img class="cases_images" src="img/product_sm2.jpg" alt="..."></li>
+                  <li><img class="cases_images" src="img/product_sm3.jpg" alt="..."></li>
+                </ul>
+              </div>
+              <button class="btn btn-default ">更多工业案例</button>  
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="cases_container">      
+              <img class="cases_images" src="img/exterior1.jpg" alt="...">
+              <div class="cases_box_text">
+                  <h3 class="text-center">工程效果图</h3>
+                  <p class="text-center">高端表现 技能卓越<br>不到1%的成本支出 解决所有甲方制图需求</p>
+                </div>
+              <div class="sub_casepic">
+                <ul>
+                  <li><img class="cases_images" src="img/eng_sm1.jpg" alt="..."></li>
+                  <li><img class="cases_images" src="img/product_sm2.jpg" alt="..."></li>
+                  <li><img class="cases_images" src="img/product_sm3.jpg" alt="..."></li>
+                </ul>
+              </div>
+              <button class="btn btn-default ">更多产品案例</button>  
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
               <div class="cases_container">      
               <img class="cases_images" src="img/vr1.jpg" alt="...">
               <div class="cases_box_text">
@@ -335,65 +379,39 @@
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="js/jquery-2.1.4.min.js"></script>
       <script src="js/bootstrap.js"></script>
-      <script src="js/swiper.min.js"></script>
-      <script src="js/swiper.animate.min.js"></script>
-      <script src="js/swiper.animate.param.js"></script>
+      <script src="js/slick.js"></script>
+      <script src="js/slick-animation.js"></script>
       <script language="javascript">
       
-          var myAC_main1 = new animateControl("main1_ani_");
-          // 在文档结构加载完成之后，载入swiper幻灯片，并初始化所有的动画控制器
-          
       $(document).ready(function(){
-      var mySwiper = new Swiper('.swiper-container-main1', {
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          spaceBetween: 30,        
-          autoplay:7000,
-          pagination: '.swiper-pagination',
-          paginationClickable: true,
-          loop:true,
-          autoplayDisableOnInteraction: false,
+        $('.swiper-wrapper').slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 7000,
+          prevArrow: $('.customprev'),
+          nextArrow: $('.customnext'),
           speed:500,
-  /*
-          effect : 'fade',
-        fade: {
-        crossFade: true,
-          }
-  */
-          onInit: function(swiper){
-            myAC_main1.init(swiperAnimateParam_main1, swiper);
-            myAC_main1.play(); // 如果页面中未使用Loading效果，则必须取消本行代码的注释，以开启myAC_main1主动画控制器中动画的播放
-          },
-          onSlideChangeEnd: function(swiper){
-            myAC_main1.play();
-          },
+});
+        $('.swiper-wrapper').slickAnimation();
+        $(".swiper-container").hover(function () {
+           $('.customnext').removeClass("animated fadeOut");
+           $('.customprev').removeClass("animated fadeOut");
+           $('.customnext').addClass("animated fadeIn");
+           $('.customprev').addClass("animated fadeIn");
+           },
+           function () {
+           $('.customnext').removeClass("animated fadeIn");
+           $('.customprev').removeClass("animated fadeIn");
+           $('.customnext').addClass("animated fadeOut");
+           $('.customprev').addClass("animated fadeOut");
+}) ;
+        
       });
           
-          //鼠标覆盖停止自动切换
-          mySwiper.container[0].onmouseover=function(){
-            mySwiper.stopAutoplay();
-            $('.swiper-button-prev').removeClass('animated fadeOutRight');
-            $('.swiper-button-prev').addClass('animated fadeInRight');
-            $('.swiper-button-next').removeClass('animated fadeOutLeft');
-            $('.swiper-button-next').addClass('animated fadeInLeft');
-            
-          }
-          //鼠标移出开始自动切换
-          mySwiper.container[0].onmouseout=function(){
-            mySwiper.startAutoplay();
-            $('.swiper-button-prev').removeClass('animated fadeInRight');
-            $('.swiper-button-prev').addClass('animated fadeOutRight');
-            $('.swiper-button-next').removeClass('animated fadeInLeft');
-            $('.swiper-button-next').addClass('animated fadeOutLeft');
-
-          }
-          //http://3.swiper.com.cn/api/function/2014/1218/111.html来自这里的信息，感谢。
-          
-          
-          });
-          
           
 
+    </script>
     </script>
   </body>
 </html>
