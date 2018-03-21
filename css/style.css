@@ -10,11 +10,22 @@ color:
 * {
     margin: 0;
     padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
   }
+
+img {
+    -webkit-backface-visibility: hidden; 
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+}
 
 body {
   padding-top: 80px;
   font-size: 18px;
+  min-height: 2000px;   
 }/*加固定浮动在上方的导航后的规矩*/
 
 h1,h2,h3,h4{
@@ -71,7 +82,7 @@ h1,h2,h3,h4{
 
 
 .navbar{
-    height: 80px ;
+    height: 80px  ;
     font-size:85%;
 }
 
@@ -110,6 +121,10 @@ h1,h2,h3,h4{
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
     background-color: #67b4e4;
+}
+
+.navbar-fixed-top  {
+    -webkit-backface-visibility: hidden;
 }
 
 /*--new slider--*/
@@ -496,7 +511,7 @@ h1{
 }
 .cases_box_text{
     padding: 5px;
-    margin: 8px 0 8px 0;
+    margin: 10px 0 12px 0;
 }
 
 .cases_container h3{
@@ -509,8 +524,26 @@ h1{
 }
 
 .cases_images{
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    max-width: 100%;
+}
+
+.cases_images:hover{
+    transform: scale(1.1);
+}
+
+.cases_imagesvr{
     width: 100%;
 }
+
+.overflowhidden{
+    overflow: hidden;
+}
+
+
 #cases .line_container_h {
     margin:40px 0 40px ;
 }
@@ -528,11 +561,11 @@ h1{
 
 }
 .sub_casepic li{
-    float: left;
+    float: right;
     display: block;
-    width:33.33%;
-    
+    width:33.33%;    
 }
+
 .sub_casepic img{
     width: 100%;
 }
