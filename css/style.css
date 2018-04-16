@@ -25,7 +25,6 @@ img {
 body {
   padding-top: 80px;
   font-size: 20px;
-  min-height: 2000px;   
 }/*加固定浮动在上方的导航后的规矩*/
 
 h1,h2,h3,h4{
@@ -169,7 +168,7 @@ h1,h2,h3,h4{
 .customnext{
     display: block;
     position: absolute;
-    top:45%;
+    top:50%;
     z-index: 50;
     cursor: pointer;
     right:0px;
@@ -422,7 +421,7 @@ h1{
     font-size: 150%;
 }
 .feature_1 p, .text-right p {
-    font-size:80%;
+    font-size:75%;
     color:rgb(107, 107, 107);
     line-height: 170%;
 }
@@ -514,7 +513,7 @@ h1{
 }
 .cases_box_text{
     padding: 5px;
-    margin: 10px 0 12px 0;
+    margin: 18px 0 15px 0;
 }
 
 .cases_container h3{
@@ -957,6 +956,20 @@ h1{
 
     
 }
+
+
+.others_slider {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.others_slider.slick-initialized{
+	visibility:visible;
+	opacity:1;
+}
+
 /*----footer----*/
 .footer_wrapper {
     background:#3e4551!important;
@@ -1021,6 +1034,185 @@ footer .row > [class*='col-'] {
 
 
 /*----QUERIES----*/
+
+@media only screen and (max-width:1199px) {
+
+
+    /*1199到992*/
+    body {
+        font-size: 18px;
+    }
+    
+    h2,h3,h4{
+        font-size:18px;
+    }
+    
+
+
+
+
+    .slider-container{
+        height:400px;
+    }
+    .makemiddle{
+        height:400px;
+    }
+
+    /*--轮播p1---*/
+.main1_ani_01 {
+    position: absolute;
+    top:10%;
+    left:50%;
+    width: 240px;
+    height: auto;
+    margin-left:-120px; 
+}
+.main1_ani_02 {
+    position: absolute;
+    top:48%;
+    left:50%;
+    width: 598px;
+    height: auto;
+    margin-left:-299px; 
+}
+.main1_ani_03 {
+    position: absolute;
+    top:84%;
+    left:50%;
+    width: 760px;
+    height: auto;
+    margin-left:-380px; 
+}
+
+.main1_ani_04{
+    font-size: 120%;
+    font-weight: 300;
+}
+
+/*--轮播p2---*/
+
+
+.main1_ani_05 {
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 638.4px;
+    height: auto;
+}
+.main1_ani_06 {
+    position: absolute;
+    top:0%;
+    left:0%;
+    width: 595.2px;
+    height: auto;
+}
+.main1_ani_07 {
+    position: absolute;
+    top:0%;
+    right:2%;
+    width: 320px;
+    height: auto;
+}
+
+.about_us_button_text{
+    margin: auto;
+}
+/*----轮播p3----*/
+.main1_ani_08{
+    position: absolute;
+    width: 345px;
+    height: auto;
+    top:27%;
+    left:20%;
+    margin-left: -173px;
+}
+.main1_ani_09{
+    position: absolute;
+    width: 651px;
+    height: auto;
+    top:25%;
+    left:71%;
+    margin-left: -326px;
+}
+
+
+.main1_ani_10{
+    position: absolute!important;
+    width: 256px!important;
+    height: 222.4px!important;
+    top:16% !important;
+    left:86% !important;
+    margin-left: -128px !important;
+}
+
+/*----轮播p4----*/
+.main1_ani_11{
+    position: absolute;
+    width: 356px;
+    height: auto;
+    top:14%;
+    left:43%;
+    margin-left: -178px;
+}
+.main1_ani_12{
+    position: absolute;
+    width: 870px;
+    height: auto;
+    top:45%;
+    left:50%;
+    margin-left: -435px;
+}
+.main1_ani_15{
+    position: absolute;
+    width: 108px;
+    height: auto;
+    top:27%;
+    left:70%;
+    margin-left: -54px;
+}
+.main1_ani_16{
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top:50%;
+    left:76%;
+    margin-left: -125px;
+    
+}
+
+
+#slogan{
+    height: 260px;
+    background-size:auto 100%;
+}
+
+.background_container{
+    height:260px;
+}
+
+.blue_gre{
+    height: 260px;
+}
+
+.feature_1 h3{
+    font-size:120%;
+}
+
+.main_case {
+    height: 200px !important;
+}
+.tooltip{
+    visibility: hidden;
+}
+.sub_casepic figure{
+    height:70px !important;
+}
+
+    }
+
+
+
+
 @media(min-width:768px){
     .navbar-nav li a {
     line-height: 50px ;
