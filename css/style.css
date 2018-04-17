@@ -581,6 +581,10 @@ h1{
             transform: translate(-50%, 0%);
 }
 
+.case_enlarge_hint{
+    opacity: 0;
+}
+
 #others .line_container_h,#news .line_container_h {
     margin:40px 0 40px ;
 }
@@ -835,6 +839,13 @@ h1{
     
 }
 
+.slogan2_wrapper{
+    width:100%;
+    position:relative;
+    height:400px;
+    overflow:hidden;
+}
+
 #slogan2 h4{
     font-size: 100%;
     font-weight: 300;
@@ -866,6 +877,10 @@ h1{
     -ms-transform: translate(-50%, -50%);
     top:50%;
     left:52%;
+}
+
+.text-wrapper span{
+    display: none ;
 }
 
 @-webkit-keyframes Gradient {
@@ -1145,6 +1160,19 @@ footer .row > [class*='col-'] {
     margin-left: -128px !important;
 }
 
+.case_enlarge_hint{
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 28px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    font-size:20px;
+    text-align: center
+}
+
+
 /*----轮播p4----*/
 .main1_ani_11{
     position: absolute;
@@ -1208,7 +1236,31 @@ footer .row > [class*='col-'] {
     height:70px !important;
 }
 
+/*---slogan2----*/
+.slogan2_wrapper{
+    height: 300px;
+}
+
+#slogan2{
+    height: 300px;
+}
+
+#slogan2 h2{
+    font-size: 260%;
+}
+
+.text-wrapper{
+    width:970px;
+}
+
+.text-wrapper span{
+    display: inline ;
+}
+
     }
+
+
+
 
 
 
