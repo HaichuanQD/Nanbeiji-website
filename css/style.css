@@ -30,6 +30,11 @@ body {
 h1,h2,h3,h4{
     font-size:20px;
 }
+
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
 /*----overlay----*/
 .overlay{
   position: absolute;
@@ -93,10 +98,12 @@ h1,h2,h3,h4{
 .navbar-brand img{height: 70px;}
 
 
-
+.navbar-nav li a {
+    line-height: 50px ;
+}
 
 .navbar-toggle{
-    margin-top: 13px;
+    margin-top: 8px;
 }
 
 
@@ -129,15 +136,14 @@ h1,h2,h3,h4{
 /*--new slider--*/
 .swiper-wrapper {
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease;
-    -webkit-transition: opacity 1s ease;
+    transition: opacity 2.5s ease;
+    -webkit-transition: opacity 2.5s ease;
+    
 }
 
-.swiper-wrapper.slick-initialized{
-	visibility:visible;
+/*.swiper-wrapper.slick-initialized{
 	opacity:1;
-}
+}*/
 
 
 
@@ -229,6 +235,14 @@ h1,h2,h3,h4{
     margin-left:-477px; 
 }
 
+.iwantoask_wrapper{
+    width: 266px;
+    position: absolute;
+    top:65%;
+    left:50%;
+    margin-left: -133px;
+}
+
 .main1_ani_04{
     font-size: 150%;
     font-weight: 300;
@@ -268,6 +282,15 @@ h1,h2,h3,h4{
 .about_us_button_text{
     margin: auto;
 }
+
+.aboutusbtn_wrapper{
+    width: 240px;
+    position: absolute;
+    top:67%;
+    left:82%;
+    margin-left: -120px;
+}
+
 /*----轮播p3----*/
 .main1_ani_08{
     position: absolute;
@@ -345,6 +368,30 @@ h1,h2,h3,h4{
 background:#c2c7c9; }
 
 
+/*----移动轮播图----*/
+.slider_moblie_wrapper{
+    width: 100%;
+    
+}
+
+.slider_moblie{
+    display: none;
+    opacity: 0;
+    transition: opacity 2.5s ease;
+    -webkit-transition: opacity 2.5s ease;
+
+}
+
+.slider_moblie.slick-initialized{
+    display: block;
+    opacity: 1;
+}
+
+.wrapper-m img{
+    width:100%;
+    height: auto;
+}
+
 /*-----service 在轮播图下方---------*/
 .service1,
 .service2,
@@ -366,7 +413,7 @@ background:#c2c7c9; }
 
 .afterswiper h3{
     margin-top:15px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 /*---about---*/
@@ -486,13 +533,14 @@ h1{
 }
 .slogantext_container{
     position: absolute;
-    top:25%;
+    top:18%;
     height:44px;
     width:auto;
 }
-.slogantext_container img{
-    height:44px;
-    width:auto;
+.slogantext_container h3{
+    color:#fff;
+    font-size: 220%;
+    font-weight: 300;
 }
 
 /*----cases案例----*/
@@ -533,9 +581,7 @@ h1{
     max-width: 100%;
 }
 
-.cases_images:hover{
-    transform: scale(1.1);
-}
+
 
 .cases_imagesvr{
     width: 100%;
@@ -582,6 +628,7 @@ h1{
 }
 
 .case_enlarge_hint{
+    display: none;
     opacity: 0;
 }
 
@@ -992,7 +1039,9 @@ h1{
     padding-top: 30px;
 }
 
-
+footer .r{
+    display: none;
+}
 
 .footer-logo img{
     height:45px;
@@ -1030,18 +1079,7 @@ footer hr {
 }
 
 
-footer .row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display:         flex;
-    flex-wrap: wrap;
-  }
 
-footer .row > [class*='col-'] {
-    display: flex;
-    flex-direction: column;
-  }
 
 .footer-bottom{
     background: #3b3b3b;
@@ -1049,6 +1087,13 @@ footer .row > [class*='col-'] {
 
 
 /*----QUERIES----*/
+@media only screen and (min-width:1200px) {
+    .cases_images:hover{
+        transform: scale(1.1);
+    }
+}
+
+
 
 @media only screen and (max-width:1199px) {
 
@@ -1160,16 +1205,12 @@ footer .row > [class*='col-'] {
     margin-left: -128px !important;
 }
 
-.case_enlarge_hint{
-    opacity: 0.7;
+.iwantoask_wrapper{
+    width: 186px;
     position: absolute;
-    right: 0;
-    bottom:0;
-    width: 28px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.6);
-    font-size:20px;
-    text-align: center
+    top:65%;
+    left:50%;
+    margin-left: -93px;
 }
 
 
@@ -1209,6 +1250,8 @@ footer .row > [class*='col-'] {
 }
 
 
+
+
 #slogan{
     height: 260px;
     background-size:auto 100%;
@@ -1227,13 +1270,26 @@ footer .row > [class*='col-'] {
 }
 
 .main_case {
-    height: 200px !important;
+    height: 200px;
 }
 .tooltip{
     visibility: hidden;
 }
 .sub_casepic figure{
     height:70px !important;
+}
+
+.case_enlarge_hint{
+    display: block;
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 28px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    font-size:20px;
+    text-align: center
 }
 
 /*---slogan2----*/
@@ -1259,34 +1315,367 @@ footer .row > [class*='col-'] {
 
     }
 
+@media only screen and (max-width:991px) {
+ /*768到991*/
+    body {
+        font-size: 16px;
+    }
 
+    h2,h3,h4{
+        font-size:16px;
+    }
 
-
-
-
-
-@media(min-width:768px){
-    .navbar-nav li a {
-    line-height: 50px ;
-}
-}
-    
-@media(max-width:767px){
-    body{
-     padding-top: 60px;   
+    .slider-container{
+        height:350px;
+    }
+    .makemiddle{
+        height:350px;
     }
     
-    .navbar{
-    height: 60px ;
-}
-    .navbar-brand{
-    height: 60px ;
-    padding: 5px 5px ;
-}
-    .navbar-brand img{height: 50px;
-    margin-left: 20px;}
+    .navbar-nav li a {
+        line-height: 30px ;
+    }
 
-.slider-container{
-    height:260px;
+    body{
+        padding-top: 60px;   
+       }
+       
+       .navbar{
+       height: 60px ;
+   }
+       .navbar-brand{
+       height: 60px ;
+       padding: 5px 5px ;
+   }
+       .navbar-brand img{
+       height: 50px;
+       margin-left: 20px;
+    }
+   
+   
+   
+
+        /*--轮播p1---*/
+    .main1_ani_01 {
+        position: absolute;
+        top:10%;
+        left:50%;
+        width: 210px;
+        height: auto;
+        margin-left:-105px; 
+    }
+    .main1_ani_02 {
+        position: absolute;
+        top:48%;
+        left:50%;
+        width: 524px;
+        height: auto;
+        margin-left:-262px; 
+    }
+    .main1_ani_03 {
+        position: absolute;
+        top:84%;
+        left:50%;
+        width: 666px;
+        height: auto;
+        margin-left:-333px; 
+    }
+
+    .main1_ani_04{
+        font-size: 120%;
+        font-weight: 300;
+    }
+
+    /*--轮播p2---*/
+
+
+    .main1_ani_05 {
+        position: absolute;
+        top:0%;
+        left:0%;
+        width: 558.6px;
+    }
+    .main1_ani_06 {
+        position: absolute;
+        top:0%;
+        left:0%;
+        width: 521.1px;
+    }
+    .main1_ani_07 {
+        position: absolute;
+        top:0%;
+        right:0%;
+        width: 245px;
+    }
+    
+    .aboutusbtn_wrapper{
+        width:180px;
+        margin-left: -60px;
+    }
+    .aboutusbtn_wrapper img{
+        height: 19px;
+    }
+
+    /*----轮播p3----*/
+    .main1_ani_08{
+        position: absolute;
+        width: 260px;
+        height: auto;
+        top:27%;
+        left:20%;
+        margin-left: -130px;
+    }
+    .main1_ani_09{
+        position: absolute;
+        width: 560px;
+        height: auto;
+        top:25%;
+        left:71%;
+        margin-left: -295px;
+    }
+
+
+    .main1_ani_10{
+        position: absolute!important;
+        width: 224px!important;
+        height: 194.6px!important;
+        top:16% !important;
+        left:86% !important;
+        margin-left: -120px !important;
+    }
+
+
+
+
+    /*----轮播p4----*/
+    .main1_ani_11{
+        position: absolute;
+        width: 312px;
+        height: auto;
+        top:14%;
+        left:43%;
+        margin-left: -156px;
+    }
+    .main1_ani_12{
+        position: absolute;
+        width: 760px;
+        height: auto;
+        top:45%;
+        left:50%;
+        margin-left: -380px;
+    }
+    .main1_ani_15{
+        position: absolute;
+        width: 95px;
+        height: auto;
+        top:27%;
+        left:72%;
+        margin-left: -47px;
+    }
+    .main1_ani_16{
+        position: absolute;
+        width: 218px;
+        height: auto;
+        top:50%;
+        left:76%;
+        margin-left: -109px;
+    
+    }
+    .main_case {
+        height: 235.75px;
+    }
+    .sub_casepic figure{
+        height:84px !important;
+    }
+/*----标志1----*/    
+    #slogan{
+        height: 200px;
+        background-size:auto 100%;
+    }
+
+    .background_container{
+        height:200px;
+    }
+
+    .blue_gre{
+        height: 200px;
+    }
+
+    .slogantext_container img{
+        height:36px;
+        width:auto;
+    }
+
+/*----标志2----*/ 
+
+    .slogan2_wrapper{
+        height: 300px;
+    }
+    
+    #slogan2{
+        height: 300px;
+    }
+    
+    #slogan2 h2{
+        font-size: 250%;
+    }
+    
+    .text-wrapper{
+        width:750px;
+    }
+
+
 }
+
+
+
+
+    
+@media(max-width:767px){
+    .slick-dots li
+    {
+    
+    width: 8px !important;
+    height: 8px !important;
+    margin: 0 5px !important;
+    padding: 0 !important;
+
+    cursor: pointer;
+   }
+
+   .slick-dots li button:before{
+    font-size: 20px !important;
+   }
+
+   .slick-dots {
+    bottom:0px !important;
+    margin-bottom: 0px;
+}
+
+
+    h1{
+        font-size: 145%;
+    }
+
+    #about h2{
+        font-size: 120%;
+    }
+
+    #about .text-right{
+        /*text-align: center;*/
+    }
+
+    .text-right h3{
+        text-align: center;
+        margin-top: 6px;
+        font-size:150%;
+    }
+    
+    .text-right .line_container_h {
+        margin:40px 0 50px ;
+        padding-left: 33.33%;
+        padding-right: 33.33%;
+    }
+    .text-right .line_solid {
+        width:100%;
+        float: left;
+    }
+    .text-right p{
+        font-size: 90%;
+    }
+    .more_info{
+        width:70%;
+        margin-left: 15%;
+        margin-bottom:80px;
+    }
+    .about_ul{
+        padding-left:0px;
+    }
+    .vertical_line{
+        left:47px;
+    }
+
+    .sub_casepic figure{
+        height:auto !important;
+    }
+
+    .main_case{
+        height: auto;
+    }
+
+    .telephoneincases h3{
+        font-size: 130% !important;
+    }
+
+    /*----标志1----*/    
+    #slogan{
+        height: 110px;
+        background-size:auto 100%;
+    }
+
+    .background_container{
+        height:110px;
+    }
+
+    .blue_gre{
+        height: 110px;
+    }
+
+    .slogantext_container h3{
+        font-size:130%;
+        font-weight: 800; 
+    }
+
+    .slogantext_container{
+
+        top:0%;
+    }
+
+    /*----标志2----*/ 
+
+    .slogan2_wrapper{
+        height: 260px;
+    }
+    
+    #slogan2{
+        height: 260px;
+    }
+    
+    #slogan2 h2{
+        font-size: 112%;
+    }
+
+    #slogan2 h4{
+        font-size: 80%;
+    }
+    
+    .text-wrapper{
+        width:100%;
+    }
+
+
+    footer .v{
+        display: none;
+    }
+
+    footer .r{
+        display: inline;
+    }
+    
+    body{
+        padding-top: 50px;   
+       }
+       
+       .navbar{
+       height: 50px ;
+   }
+       .navbar-brand{
+       height: 50px ;
+       padding: 5px 5px ;
+   }
+       .navbar-brand img{
+       height: 40px;
+       margin-left: 20px;
+    }
+    
 }
