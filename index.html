@@ -9,7 +9,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="青岛南北极三维效果图工作室">
     <meta name="author" content="Xhc">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/ico"/>
 
     <title>青岛南北极三维效果图工作室——您身边的制图专家</title>
 
@@ -36,6 +36,7 @@
   </head>
 
   <body>
+   <script src="/js/jquery-2.1.4.min.js"></script>
     <header>
       <nav class="navbar navbar-default  navbar-fixed-top">
         <div class="container">
@@ -670,107 +671,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery-2.1.4.min.js"></script>
+    
     <script src="/js/bootstrap.js"></script>
     <script src="/js/slick.js"></script>
     <script src="/js/slick-animation.js"></script>
     <script src="/js/lightbox.js"></script>
     <script src="/js/aos.js"></script>
-    <script language="javascript">
-    
-    $(document).ready(function(){
-      $('.swiper-wrapper').on('init', function(slick) {
-            
-            $('.swiper-wrapper').css("opacity","1");
-        })
-      
-      
-
-      $('.swiper-wrapper').slick({
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 7000,
-        prevArrow: $('.customprev'),
-        nextArrow: $('.customnext'),
-        speed:500,
-        touchThreshold:20,
-        responsive: [
-        {
-          breakpoint:1200,
-          settings:{
-            autoplay: true,
-            pauseOnHover: false,
-            infinite: true,
-            arrows: false,
-            prevArrow: '',
-            nextArrow: '',
-          }
-
-        }]
-});
-      $('.swiper-wrapper').slickAnimation();
-      $(".swiper-container").hover(function () {
-         $('.customnext').removeClass("animated fadeOut");
-         $('.customprev').removeClass("animated fadeOut");
-         $('.customnext').addClass("animated fadeIn");
-         $('.customprev').addClass("animated fadeIn");
-         },
-         function () {
-         $('.customnext').removeClass("animated fadeIn");
-         $('.customprev').removeClass("animated fadeIn");
-         $('.customnext').addClass("animated fadeOut");
-         $('.customprev').addClass("animated fadeOut");
-}) ;
-         
-         
-         
-
-
-
-
-
-         
-        $('.others_slider').slick({
-        dots: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        slidesToShow: 5,
-        speed:500,
-        touchThreshold:100,
-        variableWidth: true,
-        arrows:false,
-        draggable:false,
-        pauseOnHover:false,
-        swipe:false,
-});
-        $('.slider_moblie').slick({
-                dots: true,
-                infinite: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                speed:200,
-                touchThreshold:100,
-                arrows:false,
-                draggable:true,
-                pauseOnHover:false,
-        });
-
-        AOS.init({
-          once: true,
-          offset:180,
-          });
-    
-    
-    });
-    lightbox.option({
-    'albumLabel': "第 %1 张   共 %2 张"
-  }) 
-          
-
-    </script>
-    </script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

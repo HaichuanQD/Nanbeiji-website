@@ -37,6 +37,7 @@ a[href^=tel] {
 }
 /*----overlay----*/
 .overlay{
+  visibility: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -45,9 +46,9 @@ a[href^=tel] {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
   background-color: rgba(34, 129, 192, 0.70);
   text-align: center;
   vertical-align: middle;
@@ -64,6 +65,7 @@ a[href^=tel] {
 }
 
 .hover_overlay_fade:hover .overlay{
+    visibility: visible;
     opacity: 1;
 }
 
@@ -135,15 +137,20 @@ a[href^=tel] {
 
 /*--new slider--*/
 .swiper-wrapper {
+
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 2.5s ease;
-    -webkit-transition: opacity 2.5s ease;
+    -webkit-transition: opacity 1.5s ease;
+    transition: opacity 1.5s ease;
+    
     
 }
 
-/*.swiper-wrapper.slick-initialized{
+.swiper-wrapper.slick-initialized{
+
+    visibility: visible;
 	opacity:1;
-}*/
+}
 
 
 
