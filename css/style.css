@@ -208,7 +208,7 @@ a[href^=tel] {
 
 /*---轮播背景色---*/
 .lunbo1{
-    background-image: url(../img/p1.png);
+    background-image: url(/img/p1.png);
     background-size: 536px 500px;
 }
 .lunbo2,.lunbo4{background: #e6e9ea;}
@@ -512,7 +512,7 @@ h1{
 
 /*----slogan标语----*/
 #slogan{
-    background-image: url(../img/1.jpg);
+    background-image: url(/img/1.jpg);
     background-position:top right;
     height: 300px;
     width: 100%;
@@ -843,7 +843,7 @@ h1{
 
 .case-hover:hover .hover-link, .tj-case figure div:hover .hover-link, .pic-link:hover .hover-link {
 
-	background-image: url(../img/hover-link.png);
+	background-image: url(/img/hover-link.png);
 
 	background-repeat: no-repeat;
 
