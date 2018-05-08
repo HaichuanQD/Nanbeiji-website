@@ -625,7 +625,7 @@ h1{
     width: 100%;
 }
 
-.cases_container button{
+.cases_container .btn{
     margin-top:20px;
     margin-bottom: 20px; 
     margin-left: 50%;

@@ -1,14 +1,23 @@
 
 
-.about_banner{
+.s_banner{
     width: 100%;
     height:300px;
-    background: url(/img/banner_1.jpg);
+
     background-position:center;
     background-repeat: repeat-x;
     background-size: 2560px 100%;
 
 }
+
+.about_banner{
+    background: url(/img/banner_1.jpg);
+}
+
+.portfolio_banner{
+    background: url(/img/banner_2.jpg);
+}
+
 .second_title{
     color: #1b6897;
     margin-top:128px;
@@ -27,4 +36,28 @@
    margin: 0;
    padding: 20px;
    font-size: 75%;
+}
+
+.content_wrapper{
+    padding: 60px 0 60px 0;
+}
+
+.content_wrapper h3{
+    font-size:150%;
+}
+.content_wrapper hr{
+    margin: 70px 0 70px 0;
+}
+
+.content_wrapper p{
+    padding: 0 0 30px 0;
+    font-size:80%;
+}
+
+.search_pics{
+    padding:20px 0 20px 0;
+}
+
+#myTab li a{
+    font-size: 80%;
 }
