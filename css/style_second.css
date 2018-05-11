@@ -18,6 +18,10 @@
     background: url(/img/banner_2.jpg);
 }
 
+.contact_banner{
+    background: url(/img/banner_3.jpg);
+}
+
 .second_title{
     color: #1b6897;
     margin-top:128px;
@@ -60,4 +64,21 @@
 
 #myTab li a{
     font-size: 80%;
+}
+
+
+.contact_subtitle{
+    padding-top: 40px;
+}
+.contact_subtitle h3{
+    font-size: 120%;
+}
+.contact_subtitle p{
+    padding-top: 10px;
+    font-size: 80%;
+}
+
+.guide-map{
+    padding-top: 26px;
+    padding-bottom: 20px;
 }
