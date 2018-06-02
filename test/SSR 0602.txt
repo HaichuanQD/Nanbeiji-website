@@ -1,0 +1,18 @@
+ShadowsocksR账号 配置信息：
+
+ I  P       : 207.148.5.138
+ 端口       : 8547
+ 密码       : azFbpgzzVFkRk5Ms
+ 加密       : aes-256-ctr
+ 协议       : auth_sha1_v4
+ 混淆       : tls1.2_ticket_auth
+ 设备数限制 : 0(无限)
+ 单线程限速 : 0 KB/S
+ 端口总限速 : 0 KB/S
+
+ SSR   链接 : ssr://MjA3LjE0OC41LjEzODo4NTQ3OmF1dGhfc2hhMV92NDphZXMtMjU2LWN0cjp0bHMxLjJfdGlja2V0X2F1dGg6WVhwR1luQm5lbnBXUm10U2F6Vk5jdw
+ SSR 二维码 : http://doub.pw/qr/qr.php?text=ssr://MjA3LjE0OC41LjEzODo4NTQ3OmF1dGhfc2hhMV92NDphZXMtMjU2LWN0cjp0bHMxLjJfdGlja2V0X2F1dGg6WVhwR1luQm5lbnBXUm10U2F6Vk5jdw
+
+  提示:
+ 在浏览器中，打开二维码链接，就可以看到二维码图片。
+ 协议和混淆后面的[ _compatible ]，指的是 兼容原版协议/混淆。
