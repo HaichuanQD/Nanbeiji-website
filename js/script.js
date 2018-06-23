@@ -78,6 +78,19 @@ $(document).ready(function(){
                 pauseOnHover:false,
         });
 
+
+        $('.news_slider_wrapper').slick({
+
+          infinite: true,
+        /*  autoplay: true,
+          autoplaySpeed: 5000,
+          speed:200,*/
+          touchThreshold:100,
+          prevArrow: $('.news_customprev'),
+          nextArrow: $('.news_customnext'),
+          draggable:true,
+          pauseOnHover:false,
+  });
         AOS.init({
           once: true,
           offset:180,
