@@ -585,7 +585,7 @@ h1{
     line-height: 170%;
 }
 
-.cases_images{
+.cases_images,.portfolio_thumbnails{
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
     transition: transform 0.3s;
@@ -593,7 +593,9 @@ h1{
     max-width: 100%;
 }
 
-
+.portfolio_thumbnails{
+    height: auto;
+}
 
 .cases_imagesvr{
     width: 100%;
@@ -1100,7 +1102,7 @@ footer hr {
 
 /*----QUERIES----*/
 @media only screen and (min-width:1200px) {
-    .cases_images:hover{
+    .cases_images:hover,.portfolio_thumbnails:hover {
         transform: scale(1.1);
     }
 }
