@@ -91,6 +91,47 @@ $(document).ready(function(){
           draggable:true,
           pauseOnHover:false,
   });
+
+
+  $('.latest_newsslider').slick({
+
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed:500,
+    touchThreshold:100,
+    slidesToShow: 3,
+    draggable:true,
+    pauseOnHover:true,
+    slidesToScroll: 3,
+    prevArrow: $('.news_customprev2'),
+    nextArrow: $('.news_customnext2'),
+    responsive: [
+      {
+        breakpoint:992,
+        settings:{
+          pauseOnHover: false,
+          slidesToScroll: 2,
+          slidesToShow: 2,
+
+        }
+      },
+        {
+        breakpoint:768,
+        settings:{
+          pauseOnHover: false,
+          slidesToScroll: 1,
+          slidesToShow: 1,
+
+        }
+      }
+      
+    ]
+
+});
+
+
+  
         AOS.init({
           once: true,
           offset:180,
